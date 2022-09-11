@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="text-align:center">{% block title %} Add a New Student {% endblock %}</h1>
+    <form method="post">
+       <table align="center">
+              <tr>
+                     <td><div></div></td>
+                     <td>
+                            <label for="ID">ID</label>
+                     </td>
+                     <td>
+                            <input type="text" name="ID"
+                                   placeholder="Student ID"
+                                   value="{{ request.form['ID'] }}"></input>
+                     </td>
+                     <td><div></div></td>
+                     <td>
+                            <label for="LastName">LastName</label>
+                     </td>
+                     <td>
+                            <input type="text" name="LastName"
+                                   placeholder="Student LastName"
+                                   value="{{ request.form['LastName'] }}"></input>
+                     </td>
+              </tr>
+              <tr>
+                     <td><div></div></td>
+                     <td> 
+                            <label for="FirstName">FirstName</label>
+                     </td>
+                     <td>
+                            <input type="text" name="FirstName"
+                                   placeholder="Student FirstName"
+                                   value="{{ request.form['FirstName'] }}"></input>
+                     </td>
+                     <td><div></div></td>
+                     <td>
+                            <label for="City">City</label>
+                     </td>
+                     <td>
+                            <input type="text" name="City"
+                                   placeholder="City"
+                                   value="{{ request.form['City'] }}"></input>
+                     </td>
+              </tr>
+              <tr>
+                     <td><div></div></td>
+                     <td>
+                            <label for="State">State</label>
+                     </td>
+                     <td>
+                            <input type="text" name="State"
+                                   placeholder="State"
+                                   value="{{ request.form['State'] }}"></input>
+                     </td>
+                     <td><div></div></td>
+                     <td>
+                            <label for="Gender">Gender</label>
+                     </td>
+                     <td>
+                            <input type="text" name="Gender"
+                                   placeholder="Gender"
+                                   value="{{ request.form['Gender'] }}"></input>
+                     </td>
+              </tr>
+              <tr>
+                     <td><div></div></td>
+                     <td>
+                            <label for="StudentStatus">StudentStatus</label>
+                     </td>
+                     <td>
+                            <input type="text" name="StudentStatus"
+                                   placeholder="StudentStatus"
+                                   value="{{ request.form['StudentStatus'] }}"></input>
+                     </td>
+                     <td><div></div></td>
+                     <td>
+                            <label for="Major">Major</label>
+                     </td>
+                     <td>
+                            <input type="text" name="Major"
+                                   placeholder="Major"
+                                   value="{{ request.form['Major'] }}"></input>
+                     </td>
+              </tr>
+              <tr>
+                     <td><div></div></td>
+                     <td>
+                            <label for="Country">Country</label>
+                     </td>
+                     <td>
+                            <input type="text" name="Country"
+                                   placeholder="Country"
+                                   value="{{ request.form['Country'] }}"></input>
+                     </td>
+                     <td><div></div></td>
+                     <td>
+                            <label for="Age">Age</label>
+                     </td>
+                     <td>
+                            <input type="text" name="Age"
+                                   placeholder="Age"
+                                   value="{{ request.form['Age'] }}"></input>
+                     </td>
+              </tr>
+              <tr>
+                     <td><div></div></td>
+                     <td>
+                            <label for="SAT">SAT</label>
+                     </td>
+                     <td>
+                            <input type="text" name="SAT"
+                                   placeholder="SAT"
+                                   value="{{ request.form['SAT'] }}"></input>
+                     </td>
+                     <td><div></div></td>
+                     <td>
+                            <label for="Grade">Grade</label>
+                     </td>
+                     <td>
+                            <input type="text" name="Grade"
+                                   placeholder="Grade"
+                                   value="{{ request.form['Grade'] }}"></input>
+                     </td>
+              </tr>
+              <tr>
+                     <td><div></div></td>
+                     <td>
+                            <label for="Height">Height</label>
+                     </td>
+                     <td>
+                            <input type="text" name="Height"
+                                   placeholder="Height"
+                                   value="{{ request.form['Height'] }}"></input>
+                     </td>
+                     <td></td>
+              </tr>
+              <tr></tr>
+              <tr>
+                     <td><div></div></td>
+                     <td><div></div></td>
+                     <td><div></div></td>
+                     <td align="right">
+                            <button class="btn btn-danger" type="submit">Submit</button>
+                     </td>
+              </tr>
+       </table>
+    </form>
+{% endblock %}

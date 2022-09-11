@@ -1,0 +1,26 @@
+{% extends 'baselogout.html' %}
+
+{% block content %}
+<h1>{% block title %} {% endblock %}</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="mt-5">Login</h3>
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="">FirstName</label>
+                    <input class="form-control" type="text" name="FirstName" id="FirstName">
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input class="form-control" type="text" name="Password" id="Password">
+                </div>
+                
+                <input class="btn btn-danger" type="submit" value="Login" id="">
+            </form>
+        </div>
+
+    </div>
+</div>
+    
+{% endblock %}
